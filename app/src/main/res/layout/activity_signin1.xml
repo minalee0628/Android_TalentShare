@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/signin_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="회원 가입"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/et_signin_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="email을 입력해주세요 (@포함)"
+            android:inputType="textEmailAddress"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/et_signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="비밀번호를 입력해주세요 (6글자 이상)"
+            android:inputType="textPassword"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/et_signin_nickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="닉네임을 입력해주세요"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_signin_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="계정 생성"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/darklaven"/>
+
+        <Button
+            android:id="@+id/btn_signin_goback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뒤로가기"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/darklaven"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <!--날짜-->
+        <TextView
+            android:id="@+id/tv_chatinroom_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:padding="15dp"
+            android:hint="날짜">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+            <!--이름-->
+            <TextView
+                android:id="@+id/tv_chatinroom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:hint="이름">
+            </TextView>
+            <!--내용-->
+            <TextView
+                android:id="@+id/tv_chatinroom_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/my_msgbox"
+                android:hint="내용">
+            </TextView>
+
+        </LinearLayout>
+        <!--이미지-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/outline_account_circle_48">
+        </ImageView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

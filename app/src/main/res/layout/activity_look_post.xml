@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/btn_lookpost_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_24">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="게시글"
+            android:textColor="@color/darklaven"
+            android:textSize="30dp"
+            android:paddingRight="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <!-- 게시글 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <!--작성자-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="작성자 :   ">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_lookpost_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="이름">
+            </TextView>
+        </LinearLayout>
+        <!--제목-->
+        <TextView
+            android:id="@+id/tv_lookpost_Title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="9dp"
+            android:hint=" 제목"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textSize="20sp"/>
+        <!--내용-->
+        <!--등록버튼-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+            <TextView
+                android:id="@+id/tv_lookpost_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:maxLength="500"
+                android:textSize="15sp"
+                android:hint="내용"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#d32f2f</color>
+    <color name="green">#4caf50</color>
+    <color name="blue">#009fea</color>
+
+
+    <color name="darklaven">#7874F1</color>
+    <color name="skyblue">#8CBCF3</color>
+    <color name="skylaven">#DEE1FD</color>
+    <color name="laven">#8D97F4</color>
+    <color name="gray">#c0c0c0</color>
+    <color name="darkgray">#8E8E8E</color>
+</resources>

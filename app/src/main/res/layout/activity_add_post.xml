@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="게시글 작성"
+        android:textColor="@color/darklaven"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <!-- 게시글 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <!--작성자-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="작성자 :   ">
+
+            </TextView>
+            <TextView
+                android:id="@+id/et_addpost_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="이름">
+            </TextView>
+        </LinearLayout>
+        <!--제목-->
+        <EditText
+            android:id="@+id/et_addpost_Title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="9dp"
+            android:hint=" 제목"
+            android:minWidth="48dp"
+            android:minHeight="48dp"/>
+        <!--내용-->
+        <EditText
+            android:id="@+id/et_addpost_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=" 내용을 작성해주세요(300글자 이하)"
+            android:maxLength="300"/>
+        <!--등록버튼-->
+        <Button
+            android:id="@+id/btn_addpost_upload"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="게시하기"
+            android:backgroundTint="@color/darklaven"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

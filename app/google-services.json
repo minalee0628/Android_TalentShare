@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121905952945",
+    "project_id": "androidproject2024-b9919",
+    "storage_bucket": "androidproject2024-b9919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121905952945:android:cfa8214f835247c793ca90",
+        "android_client_info": {
+          "package_name": "com.example.talentshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwcdF37LzyEPtD-t8JlWNgjFS-YHmiYhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
